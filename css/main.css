@@ -1,0 +1,22 @@
+/*
+	Put your custom CSS here.
+
+	You may find these CSS3 properties useful:;
+		transition
+		-webkit-transform
+		-webkit-transform-style
+		-webkit-backface-visibility
+*/
+.front {
+	position: absolute;
+	/*I can write "transition all" instead of the code below and have the same effect. however, 
+	"all" uses more resources, since it checks the entirety of the code, plus it offers less control*/
+	transition: opacity 2s, transform 2s; 
+}
+.front:hover {
+	opacity: 0;
+	transform: rotateY(180deg);
+}
+.back:hover {
+	opacity: 1;
+}
